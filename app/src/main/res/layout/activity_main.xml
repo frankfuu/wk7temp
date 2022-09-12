@@ -1,0 +1,62 @@
+<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" tools:context=".MainActivity" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/label_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="Enter text"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_input_text"
+        android:layout_marginTop="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/label_sel_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_text"
+        android:layout_marginTop="44dp"
+        android:text="Select Language"
+        android:textSize="20dp" />
+
+    <Spinner android:background="@android:drawable/btn_dropdown"
+        android:id="@+id/spinner1"
+        android:layout_below="@+id/label_sel_language"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:id="@+id/translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="40dp"
+        android:onClick="translateText"
+        android:text="Translate" />
+
+    <TextView
+        android:id="@+id/label_translation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/translate"
+        android:layout_marginTop="44dp"
+        android:text="Translation"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tranaslation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_translation"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp" />
+</RelativeLayout>
